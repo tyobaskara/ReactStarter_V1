@@ -4,11 +4,11 @@ var webpack = require('webpack');
 
 module.exports = {
     devtool: debug ? "inline-sourcemap" : null,
-    entry: path.resolve(__dirname, 'src') + '/app/index.js',
+    entry: path.resolve(__dirname, 'src') + '/index.js',
     output: {
-        path: path.resolve(__dirname, 'dist') + '/app',
+        path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
-        publicPath: '/app/'
+        publicPath: '/dist/'
     },
     module: {
         loaders: [

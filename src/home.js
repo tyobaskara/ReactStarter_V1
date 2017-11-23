@@ -30,17 +30,18 @@ class Home extends React.Component {
             <div>
                 <Helmet>
                     <meta name="description" content="Prasetya Aji Baskara who accidently in love with front end technology and decided to explore more with it" />
-                    <link rel="shortcut icon" type="image/x-icon" href="http://oflisback.github.io/react-favicon/public/img/github.ico" />
                     <title>Home - Prasetya Aji Baskara</title>
                 </Helmet>
 
                 <Navigation active="Home"/>
 
-                <div className="wrapper-outside">
-                    <Title title="Home"/>
-                    <SubTitle subtitle="This is home.."/>
-                    <div>
-                        <button type="button" className="btn btn-large btn-block btn-default" onClick={this.testAlert}>button</button>
+                <div className="container-fluid wrapper-outside">
+                    <div className="container">
+                        <Title title="Home"/>
+                        <SubTitle subtitle="This is home.."/>
+                        <div>
+                            <button type="button" className="btn btn-danger" onClick={this.testAlert}>button</button>
+                        </div>
                     </div>
                 </div>
             </div>

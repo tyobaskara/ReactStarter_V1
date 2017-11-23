@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import './css/index.scss';
+import './assets/scss/index.scss';
 import { BrowserRouter as Router, Route, browserHistory } from 'react-router-dom';
 
 import Home from './home';
