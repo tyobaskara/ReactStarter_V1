@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build",
-    "build": "webpack -d && webpack-dev-server --content-base public/ --inline --hot --port 3000 --history-api-fallback"
+    "build": "webpack -d && webpack-dev-server --content-base public/ --inline --hot --port 3000 --history-api-fallback",
+    "update": "npm-check -u"
   },
   "author": "me",
   "license": "MIT",

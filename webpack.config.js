@@ -40,7 +40,7 @@ module.exports = {
                 }]
             },
             {
-                test: /\.(png|jpg|woff|svg|eot|gif|ttf)$/,
+                test: /\.(png|jpg|woff|woff2|svg|eot|gif|ttf)$/,
                 loader: 'file-loader',
                 include: path.join(__dirname, 'src')
             }

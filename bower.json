@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "reset-css": "^2.2.1"
+    "reset-css": "^2.2.1",
+    "bootstrap": "^3.3.7"
   }
 }
