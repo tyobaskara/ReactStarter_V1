@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import './assets/scss/index.scss';
 import { BrowserRouter as Router, Route, browserHistory } from 'react-router-dom';
 
-import Home from './home';
-import About from './about';
-import Ajax from './ajax';
+import Home from './jsx/home';
+import About from './jsx/about';
+import Ajax from './jsx/ajax';
 
 class App extends React.Component{
     render(){
@@ -19,6 +19,17 @@ class App extends React.Component{
             </Router>
         );
     }
+
+    componentWillMount(){
+        console.log('none');
+        document.body.style.display = "none";
+    }
+    componentDidMount(){
+        setTimeout(function(){
+            document.body.style.display = "block";
+        },250);
+    }
 };
+
 
 ReactDOM.render(<App/>, root);

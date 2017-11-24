@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Helmet } from 'react-helmet';
-import { Navigation } from './navigation';
+import { Navigation } from './component/navigation';
 import {Title, SubTitle} from './home';
 
 const fetchComments = () => {
