@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, browserHistory } from 'react-router-dom
 
 import Home from './home';
 import About from './about';
+import Ajax from './ajax';
 
 class App extends React.Component{
     render(){
@@ -13,6 +14,7 @@ class App extends React.Component{
                 <div>
                     <Route exact path={'/'} component={Home}></Route>
                     <Route path={'/About'} component={About}></Route>
+                    <Route path={'/Ajax'} component={Ajax}></Route>
                 </div>
             </Router>
         );
