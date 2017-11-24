@@ -13,7 +13,10 @@ const fetchComments = () => {
             return response.json();
         }
         throw new Error('Request failed!');
-    }, networkError => console.log(networkError.message)
+    }, networkError => {
+        toAppend.innerHTML = networkError.message;
+        console.log(networkError.message)
+    }
     ).then(jsonResponse => {
         toAppend.innerHTML = '';
         for(let i=0;i<jsonResponse.length;i++){
